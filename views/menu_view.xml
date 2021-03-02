@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+        <menuitem name="Point of Sales" id="swalayan_sales.menu_root" web_icon="swalayan_sales,static/img/sales.png"/>
+        <!-- menu categories -->
+        <menuitem name="Product" id="swalayan_sales.menu_product" parent="swalayan_sales.menu_root"
+                  action="sw_wh.product_action_window"/>
+
+<!--        <menuitem name="Discount" id="swalayan_sales.menu_discount_root" parent="swalayan_sales.menu_root"/>-->
+        <menuitem name="Transaction Discount" id="swalayan_sales.menu_discount" parent="swalayan_sales.menu_root"
+                  action="swalayan_sales.discount_action_window"/>
+<!--        <menuitem name="Product Discount" id="swalayan_sales.menu_disc_pro" parent="swalayan_sales.menu_discount_root"-->
+<!--                  action="swalayan_sales.disc_pro_action_window"/>-->
+
+        <menuitem name="Sales" id="swalayan_sales.menu_sales" parent="swalayan_sales.menu_root"
+                  action="swalayan_sales.sales_order_window"/>
+        <menuitem name="Customer" id="res_partner_menu" parent="swalayan_sales.menu_root"
+                    action="swalayan_sales.customer_action_window"/>
+
+
+<!--       <menuitem name="Vendor" id="swalayan_sales.menu_vendor_done" parent="swalayan_sales.menu_root"-->
+<!--                  action="swalayan_sales.vendor_action_window"/>-->
+
+<!--        <menuitem name="Authors" id="books.menu_authors" parent="books.menu_root"-->
+<!--                  action="books.author_window" groups="master.group_category_user_manager"/>-->
+<!--        <menuitem name="Members" id="books.menu_members" parent="books.menu_root"-->
+<!--                  action="books.member_window"/>-->
+<!--        <menuitem name="Transactions" id="books.menu_transactions" parent="books.menu_root"-->
+<!--                  action="books.transactions_window"/>-->
+    </data>
+</odoo>

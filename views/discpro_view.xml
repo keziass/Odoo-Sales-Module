@@ -1,0 +1,54 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="swalayan_sales.disc_pro_list">
+      <field name="name">disc_pro list</field>
+      <field name="model">swalayan_sales.disc_pro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="discount_id" />
+          <field name="name"/>
+          <field name="jumlah"/>
+          <field name="start_date"/>
+          <field name="end_date"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="swalayan_sales.disc_pro_action_window">
+      <field name="name">List Discount Product</field>
+      <field name="res_model">swalayan_sales.disc_pro</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="swalayan_sales.disc_pro_form">
+      <field name="name">Discount Product Form</field>
+      <field name="model">swalayan_sales.disc_pro</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <div class="oe_title">
+                  <h5><field name="discount_id"/></h5>
+                  <label for="name" string="Nama Discount"/>
+                  <h1>
+                    <field name="name"/>
+                  </h1>
+                </div>
+            </group>
+            <group>
+              <group>
+                <field name="jumlah"/>
+                <field name="start_date"/>
+                <field name="end_date" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>

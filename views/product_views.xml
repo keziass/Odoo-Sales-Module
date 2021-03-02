@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <record id="swalayan_product_tree_inherit" model="ir.ui.view">
+      <field name="name">swalayan.product.tree.inherit</field>
+      <field name="model">sw_wh.product</field>
+      <field name="inherit_id" ref="sw_wh.product_list"/>
+      <field name="arch" type="xml">
+        <xpath expr="//tree/field[@name='price']" position="after">
+          <field name="price_sales"></field>
+        </xpath>
+<!--inside (default): your values will be appended inside the tag
+after: add the content after the tag
+before: add the content before the tag
+replace: replace the content of the tag.-->
+      </field>
+    </record>
+
+    <record id="swalayan_product_form_inherit" model="ir.ui.view">
+      <field name="name">Product Form Inherit</field>
+      <field name="model">sw_wh.product</field>
+      <field name="inherit_id" ref="sw_wh.product_form"/> <!--Cari view nya yang mau diinherit.-->
+      <field name="arch" type="xml">
+        <xpath expr="//sheet/group[2]/group[2]/field[@name='price']" position="after">
+          <field name="price_sales"></field>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

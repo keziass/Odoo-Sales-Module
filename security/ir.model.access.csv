@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_swalayan_sales_product,sw_wh.product,sw_wh.model_sw_wh_product,base.group_user,1,1,1,1
+access_swalayan_sales_disc_pro,swalayan_sales.disc_pro,model_swalayan_sales_disc_pro,base.group_user,1,1,1,1
+access_swalayan_sales_sales,swalayan_sales.sales,model_swalayan_sales_sales,base.group_user,1,1,1,1
+access_swalayan_sales_detail_order,swalayan_sales.detail_order,model_swalayan_sales_detail_order,base.group_user,1,1,1,1
+access_swalayan_sales_discount,swalayan_sales.discount,model_swalayan_sales_discount,base.group_user,1,1,1,1
+access_swalayan_sales_partner,res.partner,base.model_res_partner,base.group_user,1,1,1,1
